@@ -72,6 +72,7 @@ a {
     color: #fff;
     font-size: 50px;
     font-family: var(--main-font);
+    text-align: center;
 }
 
 #players {
@@ -172,4 +173,29 @@ a {
     border-radius: 8px;
     text-align: center;
 
+}
+
+@media (max-width: 799px) {
+#main{
+    height: 40vh;
+}
+}
+
+
+@media (max-width: 477px) {
+    #navbar {
+        padding: .75em;
+    }
+
+    #navbar img {
+        width: 40px;
+    }
+
+    #navbar p {
+        font-size: 24px;
+    }
+
+    #main h2{
+        font-size: 40px;
+    }
 }
