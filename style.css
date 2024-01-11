@@ -33,7 +33,7 @@ a {
     width: 100%;
     align-items: center;
     padding: 1.5em 2em;
-    position: fixed;
+    position: sticky;
 }
 
 #navbar img {
