@@ -1,53 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-color: #1a1a1a;
+    --footer-color: #2c2c2c;
+    --gta-color: #47761e;
+    --main-font: 'Tektur', sans-serif;
+    --gen-color: #1e4776;
+}
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-#players{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 2em;
+html {
+    scroll-behavior: smooth;
 }
 
-.player{
-    width: 250px;
-    height: 500px;
-    background-color: red;
-    margin-top: 2em;
+body {
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: unset;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1.5em 2em;
+    position: fixed;
+}
+
+#navbar .return-main {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--gta-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#navbar img {
+    width: 60px;
+    margin-left: 25px;
+}
+
+#navbar p {
+    color: #fff;
+    font-family: var(--main-font);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#main {
+    width: 100%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.player img{
-    width: 250px;
-    height: 250px;
-}
-
-.player h2{
-color: #fff;
-margin-top: 15px;
-}
-
-.player h3{
+#main h2 {
     color: #fff;
-    margin-top: 20px;
+    font-size: 50px;
+    font-family: var(--main-font);
 }
 
-.player a{
-    margin-top: 20px;
-    font-size: 20px;
-    padding: 5px 10px;
+#players {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 3em;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.player {
+    width: 225px;
+    height: max-content;
+    background: #6c915f;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: var(--main-font);
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.player img {
+    width: 225px;
+}
+
+.playerinfo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.player .playerinfo h4 {
+    font-size: 17px;
+}
+
+.player .playerinfo p {
+    margin-top: 5px;
+}
+
+.player .playerinfo p span {
+    color: var(--gen-color);
+}
+
+.player .playerinfo .socials {
+    width: 100%;
+    display: flex;
     color: #fff;
-    background-color: black;
-    border-radius: 8px;
-    border:none;
-    font-family: sans-serif;
+    height: 100px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.player .playerinfo .socials p {
+    margin-top: 5px;
+}
+
+.player .playerinfo .socials a {
+    color: #fff;
+    width: max-content;
+    height: max-content;
+}
+
+.player .playerinfo .socials a i {
+    font-size: 18px;
+    margin-left: 4px;
+
+}
+
+.player .playerinfo .socials a .fa-instagram {
+    background: -webkit-linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
 
+.player .playerinfo .socials a .fa-whatsapp {
+    color: #25d366;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.player .playerinfo .socials a .fa-facebook {
+    color: #316FF6;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.player .playerinfo .cars-btn{
+    margin-top: 15px;
+    color: #ffff;
+    width: max-content;
+    padding: 7px 14px;
+    background-color: #000;
+    border-radius: 8px;
+    text-align: center;
+
+}
