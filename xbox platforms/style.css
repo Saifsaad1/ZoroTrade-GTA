@@ -181,6 +181,29 @@ a {
 
 }
 
+
+#footer {
+    width: 100%;
+    padding: 1em;
+    background-color: var(--footer-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: var(--main-font);
+}
+
+#footer .contact {
+    display: flex;
+    gap: 12px;
+    margin-top: 7px;
+}
+
+#footer .contact i {
+    color: #fff;
+}
+
 @media (max-width: 799px) {
 #main{
     height: 40vh;
