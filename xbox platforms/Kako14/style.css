@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-color: #1a1a1a;
+    --footer-color: #2c2c2c;
+    --gta-color: #47761e;
+    --main-font: 'Tektur', sans-serif;
+    --gen-color: #1e4776;
+    --ar-font: 'Noto Kufi Arabic', sans-serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: unset;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1.5em 2em;
+    position: sticky;
+}
+
+#navbar .return-main {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--gta-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#navbar img {
+    width: 60px;
+    margin-left: 25px;
+}
+
+#navbar p {
+    color: #fff;
+    font-family: var(--main-font);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#socials {
+    width: 100%;
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+}
+
+.player .playerinfo .socials p {
+    margin-top: 5px;
+}
+
+.player .playerinfo .socials a {
+    color: #fff;
+    width: max-content;
+    height: max-content;
+}
+
+#socials a i {
+    font-size: 18px;
+    margin-left: 4px;
+
+}
+
+#socials a .fa-instagram {
+    background: -webkit-linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+#socials a .fa-whatsapp {
+    color: #25d366;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+#socials a .fa-facebook {
+    color: #316FF6;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+#socials a .fa-telegram-plane {
+    color: #0088cc;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+#cars {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 3em;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.car {
+    width: 225px;
+    height: max-content;
+    background: #6c915f;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: var(--main-font);
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.car img {
+    width: 225px;
+}
+
+.carinfo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.car .carinfo h4 {
+    font-size: 17px;
+}
+
+.car .carinfo p {
+    margin-top: 5px;
+    font-family: var(--ar-font);
+}
+
+.car .carinfo p span {
+    color: var(--gen-color);
+}
+
+.car .carinfo .cars-btn {
+    margin-top: 15px;
+    color: #ffff;
+    width: max-content;
+    padding: 7px 14px;
+    background-color: #000;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+
+
+#footer {
+    width: 100%;
+    padding: 1em;
+    background-color: var(--footer-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: var(--main-font);
+}
+
+#footer .contact {
+    display: flex;
+    gap: 12px;
+    margin-top: 7px;
+}
+
+#footer .contact i {
+    color: #fff;
+}
